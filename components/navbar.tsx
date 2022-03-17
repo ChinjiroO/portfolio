@@ -10,10 +10,10 @@ export default function Navbar() {
             id="menu-list"
             className="hidden md:flex flex-row flex-grow gap-4 text-sm uppercase items-center text-center"
           >
-            {["skills", "projects", "contact"].map((title) => (
-              <>
+            {["skills", "projects", "contact"].map((title, index) => (
+              <div key={index}>
                 <p className="hover:text-slate-100 cursor-pointer">{title}</p>
-              </>
+              </div>
             ))}
           </div>
           <div id="icon-list" className="flex flex-row gap-4">
