@@ -27,7 +27,7 @@ export default function Navbar() {
             ))}
           </div>
           <div id="icon-list" className="flex flex-row gap-4">
-            <a href="https://github.com/">
+            <a href="https://github.com/ChinjiroO">
               <svg
                 width="24"
                 height="24"
