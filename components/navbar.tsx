@@ -1,10 +1,14 @@
+import Link from "next/link";
+
 export default function Navbar() {
   return (
-    <div className="sticky top-0">
+    <div className="sticky top-0 z-50">
       <nav className="flex justify-center w-full border-gray-700 mx-auto py-4 bg-midnight-300 text-midnight-100 ">
         <div className="flex md:min-w-[48rem] max-w-3xl justify-center gap-4">
           <div id="title" className="text-white font-bold">
-            <a href="https://github.com/">Techin Seoikrathok</a>
+            <Link href="/">
+              <a>Techin Seoikrathok</a>
+            </Link>
           </div>
           <div
             id="menu-list"
@@ -12,7 +16,13 @@ export default function Navbar() {
           >
             {["skills", "projects", "contact"].map((title, index) => (
               <div key={index}>
-                <p className="hover:text-slate-100 cursor-pointer">{title}</p>
+                <Link href={`#${title}`}>
+                  <a>
+                    <p className="hover:text-slate-100 cursor-pointer">
+                      {title}
+                    </p>
+                  </a>
+                </Link>
               </div>
             ))}
           </div>
