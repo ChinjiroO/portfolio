@@ -5,9 +5,9 @@ module.exports = {
       colors: {
         midnight: { 100: "#A7AAAE", 200: "#24292E", 300: "#1F2428" },
         red: { 101: "#E06C79" },
-        blue: { 101: "#9ECAFE" },
+        blue: { 101: "#9ECAFE", 201: "#539bf5" },
       },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/line-clamp")],
 };
