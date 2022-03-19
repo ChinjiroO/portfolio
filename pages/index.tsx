@@ -3,6 +3,7 @@ import Head from "next/head";
 import Navbar from "../components/navbar";
 import HeroSection from "../components/hero-section";
 import SkillSection from "../components/skill-section";
+import ProjectSection from "../components/project-section";
 
 export default function Home() {
   return (
@@ -16,15 +17,12 @@ export default function Home() {
       <Navbar />
       <main className="flex flex-col min-h-screen items-center font-mono text-midnight-100">
         <HeroSection />
-        {/* overview-section */}
-        <div className="flex flex-col h-[95vh] w-full justify-center items-center font-bold max-w-5xl">
-          <div className="bg-">
-            <p>Section 2</p>
-          </div>
-        </div>
-        {/* Skill */}
         <SkillSection />
+        <ProjectSection />
       </main>
+      <footer className="flex min-h-[11rem] justify-center align-center py-4 bg-midnight-300">
+        <span>footer</span>
+      </footer>
     </div>
   );
 }
