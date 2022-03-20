@@ -3,13 +3,8 @@ import Link from "next/link";
 export default function Navbar() {
   return (
     <div className="sticky top-0 z-50">
-      <nav className="flex justify-center w-full border-gray-700 mx-auto py-4 bg-midnight-300 text-midnight-100 ">
-        <div className="flex md:min-w-[48rem] max-w-3xl justify-center gap-4">
-          <div id="title" className="text-white font-bold">
-            <Link href="/">
-              <a>Techin Seoikrathok</a>
-            </Link>
-          </div>
+      <nav className="flex md:justify-center sm:w-full border-gray-700 mx-auto py-4 bg-midnight-300 text-midnight-100 ">
+        <div className="flex w-full justify-between md:min-w-[48rem] max-w-3xl gap-4 px-4">
           <div
             id="menu-list"
             className="hidden md:flex flex-row flex-grow gap-4 text-sm uppercase items-center text-center"
