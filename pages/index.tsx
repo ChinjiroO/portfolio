@@ -5,6 +5,7 @@ import HeroSection from "../components/hero-section";
 import SkillSection from "../components/skill-section";
 import ProjectSection from "../components/project-section";
 import Footer from "../components/footer";
+import ObjectiveSection from "../components/objective-section";
 
 export default function Home() {
   return (
@@ -18,8 +19,15 @@ export default function Home() {
       <Navbar />
       <main className="flex flex-col min-h-screen items-center font-mono text-midnight-100">
         <HeroSection />
-        <SkillSection />
-        <ProjectSection />
+        <div id="objective">
+          <ObjectiveSection />
+        </div>
+        <div id="skills">
+          <SkillSection />
+        </div>
+        <div id="projects">
+          <ProjectSection />
+        </div>
       </main>
 
       <footer className="flex justify-center items-center p-4 bg-midnight-100/50 text-white">
