@@ -1,4 +1,6 @@
 import Head from "next/head";
+import type { NextPage } from "next";
+import React, { useRef, useEffect } from "react";
 
 import Navbar from "../components/navbar";
 import HeroSection from "../components/hero-section";
@@ -7,7 +9,7 @@ import ProjectSection from "../components/project-section";
 import Footer from "../components/footer";
 import ObjectiveSection from "../components/objective-section";
 
-export default function Home() {
+const Home: NextPage = () => {
   return (
     <div className="bg-midnight-200">
       <Head>
@@ -18,14 +20,16 @@ export default function Home() {
 
       <Navbar />
       <main className="flex flex-col min-h-screen items-center font-mono text-midnight-100">
-        <HeroSection />
-        <div id="objective">
+        <div>
+          <HeroSection />
+        </div>
+        <div className="flex justify-center items-center sm:w-screen min-h-[800px] bg-midnight-100/10">
           <ObjectiveSection />
         </div>
-        <div id="skills">
+        <div>
           <SkillSection />
         </div>
-        <div id="projects">
+        <div>
           <ProjectSection />
         </div>
       </main>
@@ -35,4 +39,6 @@ export default function Home() {
       </footer>
     </div>
   );
-}
+};
+
+export default Home;
