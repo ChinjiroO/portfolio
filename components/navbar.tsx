@@ -5,9 +5,13 @@ import { BsGithub } from "react-icons/bs";
 import { RiCloseFill } from "react-icons/ri";
 import { motion } from "framer-motion";
 
-export default function Navbar() {
+const Navbar: React.FC = ({ myRef }) => {
   const [open, setOpen] = useState(false);
   const elementRef = useRef<HTMLDivElement>(null);
+  const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop);
+  const executeScroll = () => {
+    scrollToRef(myRef);
+  };
 
   useEffect(() => {
     function handleClickOutside(e: React.MouseEvent): void {
@@ -36,14 +40,8 @@ export default function Navbar() {
             className="hidden md:flex flex-row flex-grow gap-4 text-sm uppercase items-center text-center"
           >
             {["objective", "skills", "projects"].map((title, index) => (
-              <div key={index}>
-                <Link href={`#${title}`}>
-                  <a>
-                    <p className="hover:text-slate-100 cursor-pointer">
-                      {title}
-                    </p>
-                  </a>
-                </Link>
+              <div key={index} onClick={executeScroll}>
+                <p className="hover:text-slate-100 cursor-pointer">{title}</p>
               </div>
             ))}
           </div>
@@ -71,13 +69,13 @@ export default function Navbar() {
       {open ? (
         <motion.div
           ref={elementRef}
-          className="flex flex-col gap-4 md:hidden fixed w-full z-30 bg-midnight-300 p-4 pt-0 text-midnight-100 uppercase rounded-b-2xl shadow-xl"
-          initial={{ opacity: 0.5, y: -10 }}
-          animate={{ opacity: 1, y: 0 }}
+          className="flex flex-col h-screen gap-4 md:hidden fixed w-full z-30 bg-midnight-300 p-4 pt-0 text-midnight-100 uppercase rounded-b-2xl shadow-xl"
+          initial={{ opacity: 0.5 }}
+          animate={{ opacity: 1 }}
         >
           <hr />
-          {["objectives", "skills", "projects"].map((title, index) => (
-            <div key={index} onClick={() => setOpen(!open)}>
+          {["objective", "skills", "projects"].map((title, index) => (
+            <div key={index} id={title} onClick={() => setOpen(!open)}>
               <Link href={`#${title}`}>
                 <a>
                   <p className="hover:text-slate-100 cursor-pointer">{title}</p>
@@ -89,4 +87,5 @@ export default function Navbar() {
       ) : null}
     </div>
   );
-}
+};
+export default Navbar;

@@ -1,4 +1,6 @@
 import { HiOutlineExternalLink } from "react-icons/hi";
+import Parallax from "./parallax";
+
 const Projects = [
   {
     id: "01",
@@ -26,36 +28,40 @@ const Projects = [
   },
 ];
 
-export default function ProjectSection() {
+const ProjectSection: React.FC = () => {
   return (
     <div className="flex flex-col w-full justify-center items-center font-bold max-w-5xl py-10 px-5">
       <div className="flex flex-col w-full pb-10">
-        <p className="text-3xl">Projects</p>
+        <Parallax offset={50}>
+          <p className="text-3xl">Projects</p>
+        </Parallax>
       </div>
       <div className="flex flex-wrap w-full px-5 sm:px-10 gap-4 font-sans">
         {/* card item */}
         {Projects.map((project) => (
-          <div
-            key={project.id}
-            className=" w-full sm:w-72 bg-slate-50/5 rounded-md border border-gray-600 p-4"
-          >
-            <div className="flex items-center gap-2 mb-2">
-              <a
-                href={project.github}
-                className="line-clamp-1 font-medium text-blue-201 hover:underline decoration-2"
-              >
-                {project.title}
-              </a>
-              <a href={project.github}>
-                <HiOutlineExternalLink className="hover:text-slate-200" />
-              </a>
-            </div>
-            <p className="line-clamp-2 text-sm font-normal">
-              {project.description}
-            </p>
+          <div key={project.id}>
+            <Parallax offset={50}>
+              <div className=" w-full sm:w-72 bg-slate-50/5 rounded-md border border-gray-600 p-4">
+                <div className="flex items-center gap-2 mb-2">
+                  <a
+                    href={project.github}
+                    className="line-clamp-1 font-medium text-blue-201 hover:underline decoration-2"
+                  >
+                    {project.title}
+                  </a>
+                  <a href={project.github}>
+                    <HiOutlineExternalLink className="hover:text-slate-200" />
+                  </a>
+                </div>
+                <p className="line-clamp-2 text-sm font-normal">
+                  {project.description}
+                </p>
+              </div>
+            </Parallax>
           </div>
         ))}
       </div>
     </div>
   );
-}
+};
+export default ProjectSection;
