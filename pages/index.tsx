@@ -1,22 +1,15 @@
 import Head from "next/head";
 import type { NextPage } from "next";
-import React, { useRef, useEffect } from "react";
 
 import Navbar from "../components/navbar";
 import HeroSection from "../components/hero-section";
+import ObjectiveSection from "../components/objective-section";
 import SkillSection from "../components/skill-section";
 import ProjectSection from "../components/project-section";
+import ContactSection from "../components/contact-section";
 import Footer from "../components/footer";
-import ObjectiveSection from "../components/objective-section";
-import Parallax from "../components/parallax";
 
 const Home: NextPage = () => {
-  const myRef = useRef<HTMLInputElement>(null);
-
-  useEffect(() => {
-    console.log(myRef.current);
-  }, [myRef]);
-
   return (
     <div className="bg-midnight-200">
       <Head>
@@ -25,22 +18,34 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Navbar myRef={myRef} />
-      <main className="flex flex-col min-h-screen items-center font-mono text-midnight-100">
+      <Navbar />
+      <main className="flex flex-col min-h-screen items-center font-mono text-midnight-100 mb-20 sm:mb-0">
         <div>
           <HeroSection />
         </div>
-        <div className="flex justify-center items-center sm:w-screen min-h-[800px] sm:min-h-0 sm:py-20 bg-slate-100/70">
+        <div
+          id="objective"
+          className="flex justify-center items-center sm:w-screen min-h-[800px] sm:min-h-0 sm:py-20 bg-slate-100/70"
+        >
           <ObjectiveSection />
         </div>
         <div
-          ref={myRef}
-          className="flex justify-center items-center sm:w-screen py-40 bg-midnight-100/10"
+          id="skills"
+          className="flex justify-center items-center sm:w-screen py-40"
         >
           <SkillSection />
         </div>
-        <div className="flex justify-center items-center sm:w-screen min-h-[700px]">
+        <div
+          id="projects"
+          className="flex justify-center items-center sm:w-screen min-h-[700px]"
+        >
           <ProjectSection />
+        </div>
+        <div
+          id="contact"
+          className="flex justify-center items-center sm:w-screen min-h-[700px]"
+        >
+          <ContactSection />
         </div>
       </main>
 
