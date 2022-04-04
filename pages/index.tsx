@@ -37,7 +37,7 @@ const Home: NextPage = () => {
         </div>
         <div
           id="projects"
-          className="flex justify-center items-center sm:w-screen min-h-[700px]"
+          className="flex justify-center items-center w-full max-w-full sm:w-screen min-h-[700px]"
         >
           <ProjectSection />
         </div>
