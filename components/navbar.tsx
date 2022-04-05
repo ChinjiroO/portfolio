@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
-import { Link as LinkScroll } from "react-scroll";
+import Image from "next/image";
+import { Link as LinkScroll, animateScroll as scroll } from "react-scroll";
 import { HiMenu } from "react-icons/hi";
 import { BsGithub } from "react-icons/bs";
 import { RiCloseFill } from "react-icons/ri";
@@ -33,14 +34,23 @@ const Navbar: React.FC = () => {
   return (
     <div className="sticky top-0 z-50">
       <nav className="flex md:justify-center sm:w-full border-gray-700 mx-auto py-4 bg-midnight-300 text-midnight-100">
-        <div className="flex w-full md:justify-between md:min-w-[48rem] max-w-3xl gap-4 px-4">
+        <div className="flex w-full md:justify-between items-center md:min-w-[48rem] max-w-3xl gap-4 px-4">
           <div
             id="menu-list"
             className="hidden md:flex flex-row flex-grow gap-4 text-sm uppercase items-center text-center"
           >
+            <button className="w-9 h-9" onClick={() => scroll.scrollToTop()}>
+              <Image
+                src="/assets/icons/logos_original.svg"
+                alt="original"
+                width={100}
+                height={100}
+                layout="responsive"
+              />
+            </button>
             {menu.map((title, index) => (
               <div key={index}>
-                <LinkScroll to={title} offset={-100}>
+                <LinkScroll to={title} offset={-100} smooth={true}>
                   <p className="hover:text-slate-100 cursor-pointer">{title}</p>
                 </LinkScroll>
               </div>
@@ -48,19 +58,36 @@ const Navbar: React.FC = () => {
           </div>
           <div
             id="icon-list"
-            className="flex flex-row gap-4 min-w-full md:min-w-0 justify-between"
+            className="flex min-w-full md:min-w-0 justify-between"
           >
-            <button
-              className="flex items-center hover:text-slate-300 md:hidden "
-              onClick={handleOpen}
+            <div className="flex">
+              <button
+                className="w-9 h-9 md:hidden mr-3"
+                onClick={() => scroll.scrollToTop()}
+              >
+                <Image
+                  src="/assets/icons/logos_original.svg"
+                  alt="original"
+                  width={100}
+                  height={100}
+                  layout="responsive"
+                />
+              </button>
+              <button
+                className="flex items-center hover:text-slate-300 md:hidden "
+                onClick={handleOpen}
+              >
+                {!open ? (
+                  <HiMenu className="text-2xl fill-midnight-100 hover:fill-white transition-all duration-1000 hover:transition-all hover:duration-1000" />
+                ) : (
+                  <RiCloseFill className="text-2xl fill-midnight-100 hover:fill-white transition-all duration-1000 hover:transition-all hover:duration-1000" />
+                )}
+              </button>
+            </div>
+            <a
+              className="flex items-center justify-start"
+              href="https://github.com/ChinjiroO"
             >
-              {!open ? (
-                <HiMenu className="text-2xl fill-midnight-100 hover:fill-white transition-all duration-1000 hover:transition-all hover:duration-1000" />
-              ) : (
-                <RiCloseFill className="text-2xl fill-midnight-100 hover:fill-white transition-all duration-1000 hover:transition-all hover:duration-1000" />
-              )}
-            </button>
-            <a href="https://github.com/ChinjiroO">
               <BsGithub className="text-2xl fill-midnight-100 hover:fill-white transition-all duration-1000 hover:transition-all hover:duration-1000" />
             </a>
           </div>
@@ -76,7 +103,12 @@ const Navbar: React.FC = () => {
           <hr />
           {menu.map((title, index) => (
             <div key={index}>
-              <LinkScroll to={title} onClick={handleOpen} offset={-100}>
+              <LinkScroll
+                to={title}
+                onClick={handleOpen}
+                offset={-100}
+                smooth={true}
+              >
                 <p className="hover:text-slate-100 cursor-pointer">{title}</p>
               </LinkScroll>
             </div>
