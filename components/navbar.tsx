@@ -40,7 +40,7 @@ const Navbar: React.FC = () => {
           >
             {menu.map((title, index) => (
               <div key={index}>
-                <LinkScroll to={title}>
+                <LinkScroll to={title} offset={-100}>
                   <p className="hover:text-slate-100 cursor-pointer">{title}</p>
                 </LinkScroll>
               </div>
@@ -76,7 +76,7 @@ const Navbar: React.FC = () => {
           <hr />
           {menu.map((title, index) => (
             <div key={index}>
-              <LinkScroll to={title} onClick={handleOpen}>
+              <LinkScroll to={title} onClick={handleOpen} offset={-100}>
                 <p className="hover:text-slate-100 cursor-pointer">{title}</p>
               </LinkScroll>
             </div>
