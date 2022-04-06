@@ -3,20 +3,18 @@
 @tailwind utilities;
 
 html {
-  overflow-x: hidden;
-  scroll-behavior: smooth;
+	overflow-x: hidden;
 }
 @layer utilities {
-  .sb {
-    cursor: pointer;
-  }
-  .sb::-webkit-scrollbar {
-    height: 8px;
-    border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.2);
-  }
-  .sb::-webkit-scrollbar-thumb {
-    background-color: rgba(0, 0, 0, 0.9);
-    border-radius: 10px;
-  }
+	.sb {
+	}
+	.sb::-webkit-scrollbar {
+		height: 8px;
+		border-radius: 10px;
+		background-color: rgba(255, 255, 255, 0.2);
+	}
+	.sb::-webkit-scrollbar-thumb {
+		background-color: rgba(0, 0, 0, 0.9);
+		border-radius: 10px;
+	}
 }
