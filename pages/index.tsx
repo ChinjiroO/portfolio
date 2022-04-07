@@ -25,25 +25,25 @@ const Home: NextPage = () => {
 				</div>
 				<div
 					id="objective"
-					className="flex justify-center items-center w-screen h-screen bg-gradient-to-r from-blue-101 to-green-101"
+					className="flex justify-center items-center w-screen h-screen lg:max-h-[1000px] bg-gradient-to-r from-blue-101 to-green-101"
 				>
 					<ObjectiveSection />
 				</div>
 				<div
 					id="skills"
-					className="flex justify-center items-center w-screen min-h-screen"
+					className="flex justify-center items-center w-screen lg:min-h-[80vh] h-fit xl:max-h-[1500px]"
 				>
 					<SkillSection />
 				</div>
 				<div
 					id="projects"
-					className="flex justify-center items-center w-full max-w-full sm:w-screen h-screen"
+					className="flex justify-center items-center w-screen lg:min-h-[80vh] h-fit xl:max-h-[1500px]"
 				>
 					<ProjectSection />
 				</div>
 				<div
 					id="contact"
-					className="flex justify-center items-center sm:w-screen h-screen"
+					className="flex justify-center items-center sm:w-screen min-h-screen lg:min-h-[80vh] h-fit xl:max-h-[1500px]"
 				>
 					<ContactSection />
 				</div>

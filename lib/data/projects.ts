@@ -21,4 +21,19 @@ export const Projects = [
 		techStacks: ["Flutter", "PostgreSQL"],
 		github: "https://github.com/ChinjiroO",
 	},
+	{
+		title: "...App 04",
+		description:
+			"Commodo et cupidatat excepteur minim ea dolor mollit anim elit Lorem nisi elit aliqua. Enim et irure incididunt exercitation adipisicing esse fugiat cillum laboris.",
+		techStacks: ["React.js"],
+		github: "https://github.com/ChinjiroO",
+	},
+
+	{
+		title: "...App 05",
+		description:
+			"Commodo et cupidatat excepteur minim ea dolor mollit anim elit Lorem nisi elit aliqua. Enim et irure incididunt exercitation adipisicing esse fugiat cillum laboris.",
+		techStacks: ["React.js"],
+		github: "https://github.com/ChinjiroO",
+	},
 ];

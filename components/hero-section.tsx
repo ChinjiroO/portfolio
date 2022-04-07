@@ -7,7 +7,7 @@ const HeroSection: React.FC = () => {
 	const scale = useTransform(scrollYProgress, [0, 1], [1, -2]);
 
 	return (
-		<div className="flex overflow-x-hidden flex-col h-[95vh] w-full justify-center items-center font-bold max-w-5xl px-5">
+		<div className="flex overflow-x-hidden flex-col h-screen max-h-[1500px] w-full justify-center items-center font-bold max-w-5xl px-5">
 			<Parallax offset={50}>
 				<motion.div style={{ scale }}>
 					<div className="flex text-md sm:text-xl font-light">
