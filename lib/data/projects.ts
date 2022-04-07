@@ -22,10 +22,16 @@ export const Projects = [
 		github: "https://github.com/ChinjiroO",
 	},
 	{
-		title: "...App 04",
+		title: "...App 04 Test line clamp",
 		description:
 			"Commodo et cupidatat excepteur minim ea dolor mollit anim elit Lorem nisi elit aliqua. Enim et irure incididunt exercitation adipisicing esse fugiat cillum laboris.",
-		techStacks: ["React.js"],
+		techStacks: [
+			"React.js",
+			"tailwindcss",
+			"Restful api",
+			"MongoDB",
+			"PostgreSQL",
+		],
 		github: "https://github.com/ChinjiroO",
 	},
 

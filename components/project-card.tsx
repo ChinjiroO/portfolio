@@ -13,11 +13,9 @@ const ProjectCard: FC<Projects> = ({
 	return (
 		<div className="flex flex-col min-w-[250px] w-full overflow-hidden rounded-md bg-slate-50/5 border border-gray-600 p-4 gap-3">
 			{/* Header */}
-			<div className="flex justify-between items-center">
+			<div className="flex justify-between items-center gap-4">
 				{/* Title */}
-				<p className="line-clamp-1 font-semibold text-lg text-gray-200">
-					{title}
-				</p>
+				<p className="font-semibold text-lg text-gray-200">{title}</p>
 				{/* Icons */}
 				<div className="flex gap-4">
 					<a href={github}>
@@ -33,13 +31,11 @@ const ProjectCard: FC<Projects> = ({
 			{/* Description */}
 			<div className="flex flex-col gap-2">
 				<p className="font-normal text-base text-white/40">Description</p>
-				<p className="line-clamp-3 text-sm text-gray-200 font-normal mb-2">
-					{description}
-				</p>
+				<p className="text-sm text-gray-200 font-normal mb-2">{description}</p>
 			</div>
 			{/* Tags */}
 			<p className="font-normal text-base text-white/40">Tags</p>
-			<div className="flex w-full gap-2">
+			<div className="flex flex-wrap w-full gap-2">
 				{techStacks?.map((ts, i) => (
 					<div key={i} className="border border-green-101 rounded-full p-2">
 						<p className="text-xs text-green-101">{ts}</p>
