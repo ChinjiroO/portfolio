@@ -19,13 +19,13 @@ const Home: NextPage = () => {
 			</Head>
 
 			<Navbar />
-			<main className="flex flex-col items-center font-mono text-midnight-100 mb-20 sm:mb-0 gap-10 pb-10">
+			<main className="flex flex-col items-center font-mono text-midnight-100 mb-10 sm:mb-0 gap-10">
 				<div>
 					<HeroSection />
 				</div>
 				<div
 					id="objective"
-					className="flex justify-center items-center w-screen min-h-screen sm:py-20 bg-gradient-to-r from-blue-101 to-green-101"
+					className="flex justify-center items-center w-screen h-screen bg-gradient-to-r from-blue-101 to-green-101"
 				>
 					<ObjectiveSection />
 				</div>
@@ -43,7 +43,7 @@ const Home: NextPage = () => {
 				</div>
 				<div
 					id="contact"
-					className="flex justify-center items-center sm:w-screen"
+					className="flex justify-center items-center sm:w-screen h-screen"
 				>
 					<ContactSection />
 				</div>
