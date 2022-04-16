@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 html {
-	overflow-x: hidden;
+  overflow-x: hidden;
 }
-@layer utilities {
+/* @layer utilities {
 	.sb {
 	}
 	.sb::-webkit-scrollbar {
@@ -17,4 +17,4 @@ html {
 		background-color: rgba(0, 0, 0, 0.9);
 		border-radius: 10px;
 	}
-}
+} */
