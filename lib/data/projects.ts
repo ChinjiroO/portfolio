@@ -1,45 +1,29 @@
 export const Projects = [
-	{
-		title: "Portfolio Website",
-		description:
-			"Commodo et cupidatat excepteur minim ea dolor mollit anim elit Lorem nisi elit aliqua. Enim et irure incididunt exercitation adipisicing esse fugiat cillum laboris.Commodo et cupidatat excepteur minim ea dolor mollit anim elit Lorem nisi elit aliqua. Enim et irure incididunt exercitation adipisicing esse fugiat cillum laboris.",
-		techStacks: ["Next.js", "Tailwindcss"],
-		github: "https://github.com/ChinjiroO/portfolio.git",
-		url: "https://github.com/ChinjiroO/portfolio.git",
-	},
-	{
-		title: "Weather App",
-		description:
-			"Commodo et cupidatat excepteur minim ea dolor mollit anim elit Lorem nisi elit aliqua. Enim et irure incididunt exercitation adipisicing esse fugiat cillum laboris.",
-		techStacks: ["React.js", "Openweathermap-api"],
-		github: "https://github.com/ChinjiroO",
-	},
-	{
-		title: "News App",
-		description:
-			"Commodo et cupidatat excepteur minim ea dolor mollit anim elit Lorem nisi elit aliqua. Enim et irure incididunt exercitation adipisicing esse fugiat cillum laboris.",
-		techStacks: ["Flutter", "PostgreSQL"],
-		github: "https://github.com/ChinjiroO",
-	},
-	{
-		title: "...App 04 Test line clamp",
-		description:
-			"Commodo et cupidatat excepteur minim ea dolor mollit anim elit Lorem nisi elit aliqua. Enim et irure incididunt exercitation adipisicing esse fugiat cillum laboris.",
-		techStacks: [
-			"React.js",
-			"tailwindcss",
-			"Restful api",
-			"MongoDB",
-			"PostgreSQL",
-		],
-		github: "https://github.com/ChinjiroO",
-	},
-
-	{
-		title: "...App 05",
-		description:
-			"Commodo et cupidatat excepteur minim ea dolor mollit anim elit Lorem nisi elit aliqua. Enim et irure incididunt exercitation adipisicing esse fugiat cillum laboris.",
-		techStacks: ["React.js"],
-		github: "https://github.com/ChinjiroO",
-	},
+  {
+    title: "Portfolio Website",
+    description: "My personal website built with Next.js and hosted on Vercel.",
+    techStacks: ["Next.js", "TailwindCSS", "Vercel"],
+    github: "https://github.com/ChinjiroO/portfolio.git",
+    url: "https://github.com/ChinjiroO/portfolio.git",
+  },
+  {
+    title: "Weather App",
+    description:
+      "A simple web app that displays weather data from a current location using the fetch API (Openweathermap API)",
+    techStacks: ["React.js", "CSS module", "Openweathermap-api"],
+    github: "https://github.com/ChinjiroO/react-weather-app.git",
+  },
+  {
+    title: "Kanban Board Web App",
+    description:
+      "Kanban board web app built with React.js, Node.js, Express and PostgreSQL.",
+    techStacks: ["React.js", "TailwindCSS", "PostgreSQL"],
+    github: "https://github.com/ChinjiroO/kanban-board.git",
+  },
+  {
+    title: "Simple To-do List",
+    description: "A simple to-do list with HTML, CSS and JavaScript.",
+    techStacks: ["HTML", "CSS", "JavaScript"],
+    github: "https://github.com/ChinjiroO/simple-todo-list.git",
+  },
 ];
