@@ -19,8 +19,8 @@ const ObjectiveSection: React.FC = () => {
               “ Graduated with a B.Ed. in Computer Education and seeking an
               Front-End Developer position. Skilled in web development, mobile
               application development (Hybrid apps), and Rest API. Adept
-              knowledge of HTML, CSS, JavaScript, React.js, Responsive design,
-              and web development. ”
+              knowledge of HTML, CSS, JavaScript, React.js, and Responsive
+              design. ”
             </p>
           </Parallax>
         </div>
