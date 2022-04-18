@@ -21,10 +21,12 @@ const HeroSection: React.FC = () => {
             </p>
           </div>
           <div className="flex justify-center sm:justify-start items-center w-full mt-5">
-            {/* ADD link to download resume pdf. */}
-            <button className="w-full sm:w-auto px-4 py-2 rounded-md border border-green-101 text-green-101 hover:bg-gradient-to-tr from-blue-101 hover:border-transparent to-green-101 hover:text-white shadow-md text-md sm:text-2xl transition-all hover:transition-all">
-              RESUME
-            </button>
+            <a href="/assets/docs/CV.pdf">
+              <button className="flex justify-center items-center w-full sm:w-auto px-4 py-2 rounded-md border border-green-101 text-green-101 hover:bg-gradient-to-tr from-blue-101 hover:border-transparent to-green-101 hover:text-white shadow-md text-md sm:text-2xl transition-all hover:transition-all">
+                RESUME
+                <p className="text-sm font-thin ml-1">(pdf)</p>
+              </button>
+            </a>
           </div>
         </motion.div>
       </Parallax>
