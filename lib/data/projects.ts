@@ -4,7 +4,7 @@ export const Projects = [
     description: "My personal website built with Next.js and hosted on Vercel.",
     techStacks: ["Next.js", "TailwindCSS", "Vercel", "EmailJS"],
     github: "https://github.com/ChinjiroO/portfolio.git",
-    url: "https://github.com/ChinjiroO/portfolio.git",
+    url: "https://portfolio-techin.vercel.app",
   },
   {
     title: "Weather App",
