@@ -2,7 +2,7 @@ export const Projects = [
   {
     title: "Portfolio Website",
     description: "My personal website built with Next.js and hosted on Vercel.",
-    techStacks: ["Next.js", "TailwindCSS", "Vercel"],
+    techStacks: ["Next.js", "TailwindCSS", "Vercel", "EmailJS"],
     github: "https://github.com/ChinjiroO/portfolio.git",
     url: "https://github.com/ChinjiroO/portfolio.git",
   },
@@ -16,8 +16,14 @@ export const Projects = [
   {
     title: "Kanban Board Web App",
     description:
-      "Kanban board web app built with React.js, Node.js, Express and PostgreSQL.",
-    techStacks: ["React.js", "TailwindCSS", "PostgreSQL"],
+      "A simple kanban board to help manage tasks at a personal level, built with the PERN Stack (PostgreSQL, Express.js, React.js, and Node.js).",
+    techStacks: [
+      "React.js",
+      "TailwindCSS",
+      "PostgreSQL",
+      "Node.js",
+      "Express.js",
+    ],
     github: "https://github.com/ChinjiroO/kanban-board.git",
   },
   {
