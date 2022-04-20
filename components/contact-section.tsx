@@ -15,15 +15,20 @@ const ContactSection: React.FC = () => {
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
 
+  //env values
+  const service_id = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
+  const template_id = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
+  const public_key = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
+
   const handleSubmit = (e: React.SyntheticEvent) => {
     e.preventDefault();
     if (form.current !== null) {
       emailjs
         .sendForm(
-          "service_hn89ahq",
-          "template_90b5ru5",
+          service_id as string,
+          template_id as string,
           form.current,
-          "8URa5xSio0a2y9bX4"
+          public_key
         )
         .then((res) => {
           console.log(res);
