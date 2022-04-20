@@ -22,7 +22,7 @@ const ProjectCard: FC<Projects> = ({
             <FiGithub className="text-xl text-gray-200 hover:text-green-101" />
           </a>
           {url ? (
-            <a href={github}>
+            <a href={url}>
               <FiExternalLink className="text-xl text-gray-200 hover:text-green-101" />
             </a>
           ) : null}
