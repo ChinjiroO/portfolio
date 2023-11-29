@@ -1,5 +1,6 @@
-import { useState, useRef, ReactNode } from "react";
+'use client';
 
+import { useState, useRef, ReactNode } from 'react';
 import {
   motion,
   useViewportScroll,
@@ -7,7 +8,8 @@ import {
   useSpring,
   useIsomorphicLayoutEffect,
   useReducedMotion,
-} from "framer-motion";
+  AnimatePresence,
+} from 'framer-motion';
 
 type ParallaxProps = {
   children: ReactNode;
@@ -28,12 +30,11 @@ const Parallax = ({ children, offset = 50 }: ParallaxProps): JSX.Element => {
   const yRange = useTransform(scrollY, [initial, final], [offset, -offset]);
   const y = useSpring(yRange, { stiffness: 400, damping: 90 });
 
-  //* useIsomorphicLayoutEffect() instead of useLayoutEffect()
   useIsomorphicLayoutEffect(() => {
     const element = ref?.current?.getBoundingClientRect().top;
     const onResize = () => {
       if (!element) {
-        console.log("element === undefined ");
+        console.log('element === undefined');
       } else {
         setElementTop(element + window.scrollY || window.pageYOffset);
       }
@@ -41,8 +42,8 @@ const Parallax = ({ children, offset = 50 }: ParallaxProps): JSX.Element => {
     };
 
     onResize();
-    window.addEventListener("resize", onResize);
-    return () => window.removeEventListener("resize", onResize);
+    window.addEventListener('resize', onResize);
+    return () => window.removeEventListener('resize', onResize);
   }, [ref]);
 
   // Don't parallax if the user has "reduced motion" enabled
@@ -51,9 +52,11 @@ const Parallax = ({ children, offset = 50 }: ParallaxProps): JSX.Element => {
   }
 
   return (
-    <motion.div ref={ref} style={{ y }}>
-      {children}
-    </motion.div>
+    <AnimatePresence initial={false}>
+      <motion.div ref={ref} style={{ y }}>
+        {children}
+      </motion.div>
+    </AnimatePresence>
   );
 };
 export default Parallax;

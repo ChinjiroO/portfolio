@@ -1,5 +1,7 @@
-import Parallax from "./parallax";
-import { motion } from "framer-motion";
+'use client';
+
+import Parallax from './parallax';
+import { motion } from 'framer-motion';
 
 const ObjectiveSection: React.FC = () => {
   return (
@@ -12,10 +14,10 @@ const ObjectiveSection: React.FC = () => {
         }}
         viewport={{ once: true }}
       >
-        <div className="flex overflow-hidden h-fit shadow-xl justify-center items-center font-bold max-w-5xl py-5 sm:py-10 px-5 mx-5 bg-midnight-200/60 rounded-xl">
+        <div className='mx-5 flex h-fit max-w-5xl items-center justify-center overflow-hidden rounded-xl bg-midnight-200/60 px-5 py-5 font-bold shadow-xl sm:py-10'>
           <Parallax offset={25}>
-            <p className="text-3xl py-5 text-green-101">Objective</p>
-            <p className="font-sans font-normal text-slate-100 indent-8">
+            <p className='py-5 text-3xl text-green-101'>Objective</p>
+            <p className='indent-8 font-sans font-normal text-slate-100'>
               “ Graduated with a B.Ed. in Computer Education and seeking an
               Front-End Developer position. Skilled in web development, mobile
               application development (Hybrid apps), and Rest API. Adept
