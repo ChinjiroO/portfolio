@@ -31,13 +31,17 @@ const SkillSection: FC = () => {
                       key={index}
                       className='flex flex-col items-center justify-center gap-3'
                     >
-                      <li className='h-14 w-14'>
+                      <li className='flex h-14 w-14'>
                         <Image
                           src={skill.src}
                           alt={skill.name}
+                          sizes='100vw'
                           width={100}
                           height={100}
-                          layout='responsive'
+                          style={{
+                            width: '100%',
+                            height: 'auto',
+                          }}
                         />
                       </li>
                       <p className='text-sm font-light'>{skill.name}</p>
@@ -63,13 +67,17 @@ const SkillSection: FC = () => {
                       key={index}
                       className='flex flex-col items-center justify-center gap-3'
                     >
-                      <li className='h-14 w-14'>
+                      <li className='flex h-14 w-14'>
                         <Image
                           src={skill.src}
                           alt={skill.name}
+                          sizes='100vw'
                           width={100}
                           height={100}
-                          layout='responsive'
+                          style={{
+                            width: '100%',
+                            height: 'auto',
+                          }}
                         />
                       </li>
                       <p className='text-sm font-light'>{skill.name}</p>
@@ -95,13 +103,17 @@ const SkillSection: FC = () => {
                       key={index}
                       className='flex flex-col items-center justify-center gap-3'
                     >
-                      <li className='h-14 w-14'>
+                      <li className='flex h-14 w-14'>
                         <Image
                           src={skill.src}
                           alt={skill.name}
+                          sizes='100vw'
                           width={100}
                           height={100}
-                          layout='responsive'
+                          style={{
+                            width: '100%',
+                            height: 'auto',
+                          }}
                         />
                       </li>
                       <p className='text-sm font-light'>{skill.name}</p>
@@ -127,13 +139,17 @@ const SkillSection: FC = () => {
                       key={index}
                       className='flex flex-col items-center justify-center gap-3'
                     >
-                      <li className='h-14 w-14'>
+                      <li className='flex h-14 w-14'>
                         <Image
                           src={skill.src}
                           alt={skill.name}
+                          sizes='100vw'
                           width={100}
                           height={100}
-                          layout='responsive'
+                          style={{
+                            width: '100%',
+                            height: 'auto',
+                          }}
                         />
                       </li>
                       <p className='text-sm font-light'>{skill.name}</p>

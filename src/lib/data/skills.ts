@@ -5,7 +5,6 @@ const Skills = [
     group: 'lang',
   },
   { name: 'css', src: '/assets/icons/logos_css-3.svg', group: 'lang' },
-  // { name: "dart", src: "/assets/icons/logos_dart.svg", group: "lang" },
   {
     name: 'javascript',
     src: '/assets/icons/logos_javascript.svg',
@@ -18,18 +17,14 @@ const Skills = [
   },
   { name: 'react', src: '/assets/icons/logos_react.svg', group: 'fw' },
   {
-    name: 'xamarin',
-    src: '/assets/icons/logos_xamarin.svg',
-    group: 'fw',
-  },
-  // {
-  // 	name: "flutter",
-  // 	src: "/assets/icons/logos_flutter.svg",
-  // 	group: "fw",
-  // },
-  {
     name: 'next.js',
     src: '/assets/icons/logos_nextjs.svg',
+    group: 'fw',
+  },
+  { name: '.NET', src: '/assets/icons/logos_dot_net.svg', group: 'fw' },
+  {
+    name: 'Entity Framework',
+    src: '/assets/icons/logos_ef-core.png',
     group: 'fw',
   },
   {
@@ -47,24 +42,24 @@ const Skills = [
     src: '/assets/icons/logos_tailwindcss.svg',
     group: 'etc',
   },
-  // {
-  // 	name: "mysql",
-  // 	src: "/assets/icons/logos_mysql.svg",
-  // 	group: "db",
-  // },
   {
-    name: 'postgresql',
+    name: 'Ant Design',
+    src: '/assets/icons/logos_antd.svg',
+    group: 'etc',
+  },
+  {
+    name: 'PostgreSQL',
     src: '/assets/icons/logos_postgresql.svg',
     group: 'db',
   },
   {
-    name: 'bootstrap',
-    src: '/assets/icons/logos_bootstrap.svg',
-    group: 'etc',
+    name: 'MS SQL Server',
+    src: '/assets/icons/logos_ms-sql-server.svg',
+    group: 'db',
   },
   {
-    name: 'mongodb',
-    src: '/assets/icons/logos_mongodb.svg',
+    name: 'Firebase',
+    src: '/assets/icons/logos_firebase.svg',
     group: 'db',
   },
   {
@@ -73,23 +68,23 @@ const Skills = [
     group: 'lang',
   },
   {
-    name: 'mui',
-    src: '/assets/icons/logos_mui.svg',
+    name: 'Git',
+    src: '/assets/icons/logos_git.svg',
     group: 'etc',
   },
   {
-    name: 'node.js',
-    src: '/assets/icons/logos_nodejs.svg',
-    group: 'fw',
-  },
-  {
-    name: 'vs-code',
-    src: '/assets/icons/logos_vs-code.svg',
+    name: 'Vim',
+    src: '/assets/icons/logos_vim.svg',
     group: 'etc',
   },
   {
-    name: 'github',
-    src: '/assets/icons/logos_github.svg',
+    name: 'AWS S3',
+    src: '/assets/icons/logos_aws-s3.svg',
+    group: 'etc',
+  },
+  {
+    name: 'AWS EC2',
+    src: '/assets/icons/logos_aws-ec2.svg',
     group: 'etc',
   },
 ];

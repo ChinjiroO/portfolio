@@ -3,7 +3,7 @@ import { BsLine, BsGithub, BsTwitter } from 'react-icons/bs';
 export default function Footer() {
   return (
     <div className='flex w-full max-w-5xl flex-wrap items-center justify-between gap-4 px-4 py-4 text-slate-200 sm:py-0'>
-      <ul className='flex'>© 2022 Techin Seoikrathok.</ul>
+      <ul className='flex'>© 2023 Techin Seoikrathok.</ul>
       <div className='flex gap-4'>
         <a
           href='https://line.me/ti/p/SEjsmdq3Yn'

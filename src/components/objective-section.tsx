@@ -18,11 +18,11 @@ const ObjectiveSection: React.FC = () => {
           <Parallax offset={25}>
             <p className='py-5 text-3xl text-green-101'>Objective</p>
             <p className='indent-8 font-sans font-normal text-slate-100'>
-              “ Graduated with a B.Ed. in Computer Education and seeking an
-              Front-End Developer position. Skilled in web development, mobile
-              application development (Hybrid apps), and Rest API. Adept
-              knowledge of HTML, CSS, JavaScript, React.js, and Responsive
-              design. ”
+              “Software Developer, Experienced in designing, building, and
+              maintaining web applications with Next.js and .NET entity
+              framework. Skilled in web development and REST APIs. Adept
+              knowledge of HTML, CSS, JavaScript, TypeScript, Next.js and
+              Responsive design.”
             </p>
           </Parallax>
         </div>
